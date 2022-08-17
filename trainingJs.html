@@ -1,0 +1,20 @@
+<p id="show"></p>
+<script>
+
+const johnMassHeight = [78, 1.69];
+const markMassHeight = [92, 1.95];
+
+function calculateBMI (mass, height) {
+    return mass/Math.pow(height, 2);
+}
+
+const johnBMI = calculateBMI(johnMassHeight[0], johnMassHeight[1]);
+const markBMI = calculateBMI(markMassHeight[0], markMassHeight[1]);
+
+if (johnBMI > markBMI) {
+ document.getElementById('show').innerHTML = "John has higher BMI with " + johnBMI;
+} else {
+ document.getElementById('show').innerHTML = "Mark has higher BMI with " + markBMI;
+}
+
+</script>
